@@ -1,0 +1,412 @@
+<!DOCTYPE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html> 
+<head> 
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- jQuery Reference -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- Your Script -->
+<script type='text/javascript'>
+// When your page loads
+$(function(){
+    // Hide all images except the first within your "fade In" <div>
+    $('.fadein img:gt(0)').hide();
+    // Set an interval to occur every 3 seconds (3000ms)
+    setInterval(function(){
+      // Fade out the first element and fade in the next and then move the elements
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+});
+</script>
+
+<script id="_waupcp">var _wau = _wau || [];
+_wau.push(["tab", "fbatgwseju0k", "pcp", "left-middle"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+<script type="text/javascript">
+var countdownnumber=0;
+var daycount=0;
+var countdownid,x,y,z;
+var cashflowxd = 0
+
+function initial(){
+  x=document.getElementById("countdown");
+  countdown.style.fontSize=Number(30)+ "px" ;
+  x.innerHTML=countdownnumber;
+  countdownid=window.setInterval(win,1000);
+  y=document.getElementById("countdownday");
+  countdownday.style.fontSize=Number(25)+ "px" ;
+  y.innerHTML=daycount;
+  daycount++;
+  countdownnumber-=300;
+  countdownid2=window.setInterval(countdowndayfunc,1000);
+  countdownid3=window.setInterval(countdowncostfunc,1000);
+
+  z=document.getElementById("cashflow");
+  z.innerHTML = cashflowxd;
+
+
+}
+
+function countdowndayfunc(){
+  y.innerHTML=daycount;
+  daycount++;
+}
+
+function countdowncostfunc(){
+x.innerHTML=countdownnumber;
+  countdownnumber-=300;
+}
+
+
+
+function backmoneyfunc1(){ 
+  x.innerHTML=countdownnumber;
+
+  countdownnumber+=10;
+
+}
+function backmoneyfunc5(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=80;
+}function backmoneyfunc10(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=200;
+}function backmoneyfunc50(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=1000;
+}
+function backmoney10(){
+    x.innerHTML=countdownnumber;
+     countdownid=window.setInterval(backmoneyfunc1,1000);
+       countdownnumber+=10;
+       countdownnumber-=30000;
+       cashflowxd+=10
+         z.innerHTML = cashflowxd;
+}
+function backmoney80(){
+    x.innerHTML=countdownnumber;
+     countdownid=window.setInterval(backmoneyfunc5,1000);
+       countdownnumber+=80;
+      countdownnumber-=200000;
+       cashflowxd+=80
+        cashflowxd+=80
+         z.innerHTML = cashflowxd;
+}
+function backmoney200(){
+    x.innerHTML=countdownnumber;
+     countdownid=window.setInterval(backmoneyfunc10,1000);
+       countdownnumber+=200;
+      countdownnumber-=400000;
+       cashflowxd+=200
+      z.innerHTML = cashflowxd;
+
+}
+function backmoney1000(){
+    x.innerHTML=countdownnumber;
+     countdownid=window.setInterval(backmoneyfunc50,1000);
+       countdownnumber+=1000;
+        cashflowxd+=1000
+        z.innerHTML = cashflowxd;
+}
+
+function win(){
+  x.innerHTML=countdownnumber;
+  if (countdownnumber>100000000||cashflowxd>100000){
+    alert("你贏了！！！恭喜成為億萬富翁！！！"+"你總共花了約"+Math.round(daycount/30)+"月達成，很厲害喔！！！");
+ clearInterval(countdownid);
+  }
+  else if (countdownnumber<-10000000){
+    alert("你輸了！！！你欠了一屁股債，快跑路吧！！！");
+ clearInterval(countdownid);
+  }
+}
+
+function incomeForWorkFunc(){
+var engineer = document.getElementById("engineer");
+x.innerHTML=countdownnumber;
+// countdownnumber+=42000;
+engineer.disabled=false;
+}
+
+function incomeForWork(){
+  var engineer = document.getElementById("engineer");
+x.innerHTML=countdownnumber;
+    x.innerHTML=countdownnumber;
+     countdownid=window.setTimeout(incomeForWorkFunc,30000);
+       countdownnumber+=42000;
+       
+}
+
+
+
+function income100(){
+  x.innerHTML=countdownnumber;
+  countdownnumber+=100;
+}
+function income300(){
+  x.innerHTML=countdownnumber;
+  countdownnumber+=300;
+}
+function income2000(){
+  x.innerHTML=countdownnumber;
+  countdownnumber+=2000;
+}
+function income10000(){
+  x.innerHTML=countdownnumber;
+  countdownnumber+=10000;
+}
+
+
+function invest3(){
+  x.innerHTML=countdownnumber;
+  if (countdownnumber>0){
+var r = Math.random()*100;
+if (r<=97){
+  countdownnumber*=1.03;
+  Math.round(countdownnumber);
+    countdownnumber=Math.round(countdownnumber);
+  }
+else{
+  countdownnumber/=2;
+  Math.round(countdownnumber);
+  countdownnumber=Math.round(countdownnumber);
+}
+}
+}
+
+function invest5(){
+    x.innerHTML=countdownnumber;
+  if (countdownnumber>0){
+var r = Math.random()*100;
+if (r<=95){
+  countdownnumber*=1.05;
+  Math.round(countdownnumber);
+    countdownnumber=Math.round(countdownnumber);
+  }
+else{
+  countdownnumber/=2;
+  Math.round(countdownnumber);
+  countdownnumber=Math.round(countdownnumber);
+}
+}
+}
+function invest10(){
+     x.innerHTML=countdownnumber;
+  if (countdownnumber>0){
+var r = Math.random()*100;
+if (r<=90){
+  countdownnumber*=1.1;
+  Math.round(countdownnumber);
+    countdownnumber=Math.round(countdownnumber);
+  }
+else{
+  countdownnumber/=2;
+  Math.round(countdownnumber);
+  countdownnumber=Math.round(countdownnumber);
+}
+}
+}
+function invest20(){
+     x.innerHTML=countdownnumber;
+  if (countdownnumber>0){
+var r = Math.random()*100;
+if (r<=80){
+  countdownnumber*=1.2;
+  Math.round(countdownnumber);
+    countdownnumber=Math.round(countdownnumber);
+  }
+else{
+  countdownnumber/=2;
+  Math.round(countdownnumber);
+  countdownnumber=Math.round(countdownnumber);
+}
+}
+}
+function latou(){
+     x.innerHTML=countdownnumber;
+var r = Math.random()*1000000;
+if (r<=1){
+  countdownnumber+=200000000;
+  }
+else if (r>=9999900){
+  countdownnumber+=1000000;
+  }
+else{
+  countdownnumber-=50;
+}
+}
+
+function startup1(){
+  var r = Math.random()*100;
+if (r<=60){
+  countdownnumber-=30000;
+  countdownid=window.setInterval(startupfunc1,1000);
+  countdownnumber+=60;
+   cashflowxd+=60
+  z.innerHTML = cashflowxd;
+  }
+else{
+  countdownnumber-=30000;
+}
+}
+
+function startup2(){
+  var r = Math.random()*100;
+if (r<=40){
+  countdownnumber-=100000;
+  countdownid=window.setInterval(startupfunc2,1000);
+  countdownnumber+=300;
+  cashflowxd+=300
+  z.innerHTML = cashflowxd;
+  }
+else{
+  countdownnumber-=100000;
+}
+}
+
+function startup3(){
+  var r = Math.random()*100;
+if (r<=20){
+  countdownnumber-=300000;
+  countdownid=window.setInterval(startupfunc3,1000);
+  countdownnumber+=3000;
+  cashflowxd+=3000
+  z.innerHTML = cashflowxd;
+  }
+else{
+  countdownnumber-=300000;
+}
+}
+
+function startup4(){
+  var r = Math.random()*100;
+if (r<=15){
+  countdownnumber-=1500000;
+  countdownid=window.setInterval(startupfunc4,1000);
+  countdownnumber+=20000;
+  cashflowxd+=2000
+  z.innerHTML = cashflowxd;
+  }
+else{
+  countdownnumber-=1500000;
+}
+}
+
+function startupfunc1(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=60;
+}
+function startupfunc2(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=300;
+}
+function startupfunc3(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=3000;
+}
+function startupfunc4(){ 
+  x.innerHTML=countdownnumber;
+  countdownnumber+=20000;
+}
+
+
+
+
+
+
+</script>
+<style>  
+      body{
+            background-image: url("http://pic.qiantucdn.com/58pic/10/95/80/86558PICce6.jpg");
+            background-size:cover;
+          }
+        p{
+             font-family: Meiryo;
+             font-size: 26px;
+             color: red;
+        }
+        div{
+          color:#fffacd;
+        }
+        h1{
+          color:yellow;
+        }
+        h3{
+          color:white;
+        }
+        h5{
+          color:white;
+        }
+</style>
+<!-- <iframe src="//giphy.com/embed/KJg6Znn4V1Jcs" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/KJg6Znn4V1Jcs">via GIPHY</a></p> -->
+</head> 
+<body align="center" onload="initial();"> 
+<h1>現金流遊戲</h1><h5>獲勝條件：資產破億or被動收入破10萬/日</h5><h5><a>注意：投資需要資產為正，並且失敗後資產變為一半</a></h5>
+<h5><a>注意：工作需要每30天去按一次才會拿到月薪</a></h5>
+<h5><a>注意：如果負債超過1000萬即破產</a></h5>
+
+
+<br><h3>初始設定：每天300元生活費<h3><br> <br> 
+
+
+<p>第幾天:</p>
+<div id="countdownday"> </div>
+<br> 
+<p>你的財產:</p>
+<div id="countdown"> </div>
+<br> 
+<p>你的被動收入(每日):</p>
+<div id="cashflow"> </div>
+<br><br> 
+
+<button class="btn btn-warning" onclick="this.disabled=true; incomeForWork()" id="engineer">當工程師 +42000/月</button>
+
+
+
+
+<br>
+<button class="btn btn-default" onclick="income100()">兼差+100</button>
+<button class="btn btn-default" onclick="income300()">兼差+300</button>
+<button disabled="disabled" class="btn btn-default" onclick="income2000()">兼差+2000</button>
+<button disabled="disabled" class="btn btn-default" onclick="income10000()">兼差+10000</button>
+<br>
+<button class="btn btn-info" onclick="backmoney10()">當包租公+10/日（付出3萬）</button>
+<button class="btn btn-info" onclick="backmoney80()">當包租公+80/日（付出20萬）</button>
+<button  class="btn btn-info" onclick="backmoney200()">當包租公+200/日（付出40萬）</button>
+<button disabled="disabled" id="backmoney1000" class="btn btn-info" onclick="backmoney1000()">當包租公+1000/日（付出180萬）</button>
+<br>
+<button class="btn btn-danger" onclick="invest3()">投資獲利3%（97%成功)</button>
+<button  class="btn btn-danger" onclick="invest5()">投資獲利5%（95%成功）</button>
+<button disabled="disabled" class="btn btn-danger" onclick="invest10()">投資獲利10%（90%成功)</button>
+<button disabled="disabled" class="btn btn-danger" onclick="invest20()">投資獲利20%（80%成功)</button>
+
+<br>
+<button class="btn btn-success" onclick="latou()">買50元大樂透頭獎(0.0001%兩億中獎率＆0.005%一百萬中獎率）</button>
+<br>
+
+<button class="btn btn-primary" onclick="startup1()">創業+60/日（付出3萬，成功率60%）</button>
+<button class="btn btn-primary" onclick="startup2()">創業+300/日（付出10萬，成功率40%）</button>
+<button  class="btn btn-primary" onclick="startup3()">創業+3000/日（付出30萬，成功率20%）</button>
+<button disabled="disabled" id="backmoney1000" class="btn btn-primary" onclick="startup4()">創業+20000/日（付出150萬，成功率15%）</button>
+<br>
+<blockquote>
+  <div>窮人在為錢而工作，富人讓錢為他們工作。</div>
+  <footer>famous in <cite title="Source Title">《富爸爸·窮爸爸》</cite></footer>
+</blockquote>
+<h5>Connect Me : www.facebook.com/raja83946993</h5>
+</body> 
+</html>
